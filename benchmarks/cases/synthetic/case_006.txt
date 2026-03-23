@@ -1,0 +1,4 @@
+Table 7: Lab Signals
+AnaIyte   Result
+H8   Pos1tive
+CRP   Negat1ve

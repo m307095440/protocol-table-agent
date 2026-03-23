@@ -1,0 +1,4 @@
+Table 1: Demographics
+Arm  N  Mean Age
+A  12  45.2
+B  11  46.1

@@ -1,0 +1,113 @@
+{
+  "tables": [
+    {
+      "caption": "Visit Windows",
+      "data": {
+        "column_groups": [
+          {
+            "end_col": 2,
+            "name": "Window",
+            "start_col": 1
+          }
+        ],
+        "columns": [
+          {
+            "colspan": 1,
+            "name": "Visit"
+          },
+          {
+            "colspan": 1,
+            "name": "Window | Start"
+          },
+          {
+            "colspan": 1,
+            "name": "Window | End"
+          },
+          {
+            "colspan": 1,
+            "name": "Assessments | Labs"
+          }
+        ],
+        "footnotes": [],
+        "notes_below_table": [],
+        "rows": [
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Visit"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Window"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Window"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Assessments"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Visit"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Start"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "End"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Labs"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Screening"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "-14"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "-1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Yes"
+              }
+            ]
+          }
+        ]
+      },
+      "page_number": 1,
+      "table_id": 1,
+      "title": "Visit Windows"
+    }
+  ]
+}

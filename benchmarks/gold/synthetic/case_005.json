@@ -1,0 +1,126 @@
+{
+  "tables": [
+    {
+      "caption": "Schedule of Assessments",
+      "data": {
+        "column_groups": [],
+        "columns": [
+          {
+            "colspan": 1,
+            "name": "Visit"
+          },
+          {
+            "colspan": 1,
+            "name": "CBC"
+          },
+          {
+            "colspan": 1,
+            "name": "ECG"
+          }
+        ],
+        "footnotes": [],
+        "notes_below_table": [],
+        "rows": [
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Visit"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "CBC"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "ECG"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "V1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Yes"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "No"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "V2"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Yes"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Yes"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Visit"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "CBC"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "ECG"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "V3"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Yes"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Yes"
+              }
+            ]
+          }
+        ]
+      },
+      "page_number": 1,
+      "table_id": 1,
+      "title": "Schedule of Assessments"
+    }
+  ]
+}

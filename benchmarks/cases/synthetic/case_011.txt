@@ -1,0 +1,6 @@
+Table 5: Schedule of Assessments
+Visit  CBC  ECG
+V1  Yes  No
+V2  Yes  YesTable 6: Schedule of Assessments (Continued)
+Visit  CBC  ECG
+V3  Yes  Yes

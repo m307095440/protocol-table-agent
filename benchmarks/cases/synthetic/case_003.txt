@@ -1,0 +1,5 @@
+Table 3: Primary Endpoints
+Endpoint | Value
+ORR* | 35%
+DCR | 67%
+* Applies to A1 cohort

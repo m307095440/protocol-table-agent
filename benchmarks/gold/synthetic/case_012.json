@@ -1,0 +1,69 @@
+{
+  "tables": [
+    {
+      "caption": "Lab Signals",
+      "data": {
+        "column_groups": [],
+        "columns": [
+          {
+            "colspan": 1,
+            "name": "AnaIyte"
+          },
+          {
+            "colspan": 1,
+            "name": "Result"
+          }
+        ],
+        "footnotes": [],
+        "notes_below_table": [],
+        "rows": [
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "AnaIyte"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Result"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "H8"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Pos1tive"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "CRP"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Negat1ve"
+              }
+            ]
+          }
+        ]
+      },
+      "page_number": 1,
+      "table_id": 1,
+      "title": "Lab Signals"
+    }
+  ]
+}

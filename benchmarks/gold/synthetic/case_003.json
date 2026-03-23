@@ -1,0 +1,78 @@
+{
+  "tables": [
+    {
+      "caption": "Primary Endpoints",
+      "data": {
+        "column_groups": [],
+        "columns": [
+          {
+            "colspan": 1,
+            "name": "Endpoint"
+          },
+          {
+            "colspan": 1,
+            "name": "Value"
+          }
+        ],
+        "footnotes": [
+          {
+            "applies_to": [
+              "A1"
+            ],
+            "note_id": 1,
+            "symbol": "*",
+            "text": "Applies to A1 cohort"
+          }
+        ],
+        "notes_below_table": [],
+        "rows": [
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Endpoint"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Value"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "ORR*"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "35%"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "DCR"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "67%"
+              }
+            ]
+          }
+        ]
+      },
+      "page_number": 1,
+      "table_id": 1,
+      "title": "Primary Endpoints"
+    }
+  ]
+}

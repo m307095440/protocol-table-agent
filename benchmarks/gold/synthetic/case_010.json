@@ -1,0 +1,71 @@
+{
+  "tables": [
+    {
+      "caption": "Dose Levels",
+      "data": {
+        "column_groups": [],
+        "columns": [
+          {
+            "colspan": 1,
+            "name": "Level"
+          },
+          {
+            "colspan": 1,
+            "name": "Dose"
+          }
+        ],
+        "footnotes": [],
+        "notes_below_table": [
+          "Note: Dose may be reduced for toxicity"
+        ],
+        "rows": [
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Level"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Dose"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "10mg"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "2"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "20mg"
+              }
+            ]
+          }
+        ]
+      },
+      "page_number": 1,
+      "table_id": 1,
+      "title": "Dose Levels"
+    }
+  ]
+}

@@ -1,87 +1,59 @@
 # Protocol Table Agent
 
-A Codex-driven repository for building a deterministic, self-improving protocol table extraction system.
+Deterministic, schema-first protocol table extraction baseline with explicit benchmark artifacts and failure taxonomy.
 
-## Purpose
-This repository is the starting point for Codex to build a generalized parser that extracts tables from protocol PDFs into a stable JSON schema.
+## Implemented components
 
-## Current state
-This repository initially contains:
-- task instructions for Codex
-- a target JSON schema draft
-- a benchmark plan
-- example inputs
+- `src/parser/`: generalized table parser for PDF/text protocol content
+- `src/eval/validate_outputs.py`: schema-contract validator
+- `src/eval/run_benchmark.py`: regression benchmark + failure artifact exporter
+- `src/synth/generate_cases.py`: deterministic synthetic case + independent gold generator
+- `src/runner/self_improve.py`: iterative loop with deterministic config search
+- `tests/`: regression tests for parser behavior and benchmark flow
 
-It does not yet contain the parser implementation.
+## Determinism
 
-## Core goal
-Given a protocol PDF, extract all tables into structured JSON that conforms to `schema/protocol_table.schema.json`.
+- fixed synthetic RNG seed (`20260323`)
+- deterministic sort/serialization (`sort_keys=True`)
+- sorted file iteration for benchmark
+- deterministic parser config search space in self-improve loop
 
-## Important constraints
-- The provided sample JSON is a structure reference, not guaranteed truth.
-- The parser must generalize across many protocol layouts.
-- The parser must avoid overfitting to one study or sponsor.
-- Runs should be reproducible and as deterministic as practical.
+## Installation
 
-## Initial repository setup
-Place the following files here before starting Codex:
-- `inputs/examples/ABC-01-001 Study Protocol-v2 1-Bookmark.pdf`
-- `inputs/examples/file_parser_example.json`
+```bash
+python -m pip install -e .[dev]
+```
 
-## Recommended Codex workflow
-1. Open this repository in Codex.
-2. Ask Codex to read:
-   - `AGENTS.md`
-   - `TASK_SPEC.md`
-   - `schema/protocol_table.schema.json`
-   - `benchmarks/BENCHMARK_PLAN.md`
-   - `prompts/CODEX_BOOTSTRAP_PROMPT.md`
-3. Instruct Codex to:
-   - scaffold the codebase
-   - implement a baseline parser
-   - add schema validation
-   - add tests
-   - add benchmark evaluation
-   - add synthetic data generation
-   - iterate until benchmark quality stabilizes
+## Parse examples
 
-## Expected implementation areas
-Codex should eventually create:
-- `src/parser/`
-- `src/eval/`
-- `src/synth/`
-- `src/runner/`
-- `tests/`
+```bash
+python -m src.parser inputs/examples/ABC-01-001\ Study\ Protocol-v2\ 1-Bookmark.pdf artifacts/outputs/sample_pdf.json
+python -m src.parser benchmarks/cases/synthetic/case_001.txt artifacts/outputs/case_001.json
+```
 
-## Minimum expected commands after implementation
-These are expected target commands that Codex should make work:
-- `python -m pytest tests -q`
-- `python -m src.eval.validate_outputs`
-- `python -m src.eval.run_benchmark`
-- `python -m src.runner.report_metrics`
+## Full reproducible workflow
 
-## Output artifacts
-Codex should save the following under `artifacts/`:
-- logs
-- benchmark summaries
-- failure classifications
-- output diffs
-- failed sample outputs
+```bash
+python -m src.synth.generate_cases --num-cases 12
+python -m pytest tests -q
+python -m src.eval.run_benchmark
+python -m src.eval.validate_outputs
+python -m src.runner.report_metrics
+python -m src.runner.self_improve --iterations 2
+```
 
-## Quality priorities
-Prioritize:
-1. schema validity
-2. table detection recall
-3. boundary correctness
-4. header structure
-5. rowspan / colspan
-6. footnote linkage
-7. continuation-table handling
-8. text fidelity
+## Artifact outputs
 
-## What success looks like
-A good first version should:
-- pass schema validation
-- work on a meaningful subset of protocol tables
-- expose failure modes clearly
-- improve through repeated benchmark-driven iteration
+Generated at runtime under `artifacts/`:
+
+- `artifacts/outputs/*.json`
+- `artifacts/failed_cases/*.json`
+- `artifacts/metrics/benchmark_summary.json`
+- `artifacts/metrics/benchmark_results.json`
+- `artifacts/self_improve/iteration_*.json`
+
+## Notes
+
+- Synthetic benchmark gold labels are generated independently of parser predictions.
+- The provided sample JSON is used as a structure reference, not assumed ground truth.
+- The core parser avoids document-title/sponsor/page hardcoding.

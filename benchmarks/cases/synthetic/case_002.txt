@@ -1,0 +1,4 @@
+Table 2: Visit Windows
+Visit  Window  Window  Assessments
+Visit  Start  End  Labs
+Screening  -14  -1  Yes

@@ -1,0 +1,5 @@
+Table 4: Dose Levels
+Level  Dose
+1  10mg
+2  20mg
+Note: Dose may be reduced for toxicity

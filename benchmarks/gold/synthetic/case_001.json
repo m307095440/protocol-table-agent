@@ -1,0 +1,88 @@
+{
+  "tables": [
+    {
+      "caption": "Demographics",
+      "data": {
+        "column_groups": [],
+        "columns": [
+          {
+            "colspan": 1,
+            "name": "Arm"
+          },
+          {
+            "colspan": 1,
+            "name": "N"
+          },
+          {
+            "colspan": 1,
+            "name": "Mean Age"
+          }
+        ],
+        "footnotes": [],
+        "notes_below_table": [],
+        "rows": [
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Arm"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "N"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Mean Age"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "A"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "12"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "45.2"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "B"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "11"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "46.1"
+              }
+            ]
+          }
+        ]
+      },
+      "page_number": 1,
+      "table_id": 1,
+      "title": "Demographics"
+    }
+  ]
+}
