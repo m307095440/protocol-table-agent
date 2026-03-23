@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "tables"
+  ],
+  "properties": {
+    "tables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "table_id",
+          "page_number",
+          "title",
+          "caption",
+          "data"
+        ],
+        "properties": {
+          "table_id": {
+            "type": "integer"
+          },
+          "page_number": {
+            "type": "integer"
+          },
+          "title": {
+            "type": "string"
+          },
+          "caption": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "columns",
+              "column_groups",
+              "rows",
+              "footnotes",
+              "notes_below_table"
+            ],
+            "properties": {
+              "columns": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "name",
+                    "colspan"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "colspan": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "column_groups": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "name",
+                    "start_col",
+                    "end_col"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "start_col": {
+                      "type": "integer"
+                    },
+                    "end_col": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "rows": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "cells"
+                  ],
+                  "properties": {
+                    "cells": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "text",
+                          "rowspan",
+                          "colspan"
+                        ],
+                        "properties": {
+                          "text": {
+                            "type": "string"
+                          },
+                          "rowspan": {
+                            "type": "integer"
+                          },
+                          "colspan": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "footnotes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "note_id",
+                    "symbol",
+                    "text",
+                    "applies_to"
+                  ],
+                  "properties": {
+                    "note_id": {
+                      "type": "integer"
+                    },
+                    "symbol": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    },
+                    "applies_to": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "notes_below_table": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
