@@ -1,0 +1,9 @@
+Table 1: Value Schedule
+Group_0_0  Visit_0_1  Group_0_2  Window_0_3  Result_0_4  Dose_0_5
+Window_1_0  Group_1_1  Value_1_2  Assessment_1_3  Result_1_4  Value_1_5
+R0C0  R0C1  R0C2  R0C3  R0C4  R0C5
+R1C0  R1C1  R1C2  R1C3  R1C4  R1C5
+R2C0  R2C1  R2C2  R2C3  R2C4  R2C5
+R3C0  R3C1  R3C2  R3C3  R3C4  R3C5
+R4C0  R4C1  R4C2  R4C3  R4C4  R4C5
+* A1 applies to subgroup

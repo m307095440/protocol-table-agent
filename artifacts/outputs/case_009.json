@@ -1,0 +1,195 @@
+{
+  "tables": [
+    {
+      "caption": "Window Schedule",
+      "data": {
+        "column_groups": [],
+        "columns": [
+          {
+            "colspan": 1,
+            "name": "Value_0_0 | R0C0 | R1C0"
+          },
+          {
+            "colspan": 1,
+            "name": "Cohort_0_1 | R0C1 | R1C1"
+          },
+          {
+            "colspan": 1,
+            "name": "Value_0_2 | R0C2 | R1C2"
+          },
+          {
+            "colspan": 1,
+            "name": "Assessment_0_3 | R0C3 | R1C3"
+          },
+          {
+            "colspan": 1,
+            "name": "Dose_0_4 | R0C4 | R1C4"
+          }
+        ],
+        "footnotes": [
+          {
+            "applies_to": [
+              "A1"
+            ],
+            "note_id": 1,
+            "symbol": "*",
+            "text": "A1 applies to subgroup"
+          }
+        ],
+        "notes_below_table": [
+          "Note: synthetic continuation candidate"
+        ],
+        "rows": [
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Value_0_0"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Cohort_0_1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Value_0_2"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Assessment_0_3"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Dose_0_4"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R0C0"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R0C1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R0C2"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R0C3"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R0C4"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R1C0"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R1C1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R1C2"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R1C3"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R1C4"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R2C0"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R2C1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R2C2"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R2C3"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R2C4"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R3C0"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R3C1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R3C2"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R3C3"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R3C4"
+              }
+            ]
+          }
+        ]
+      },
+      "page_number": 1,
+      "table_id": 1,
+      "title": "Window Schedule"
+    }
+  ]
+}

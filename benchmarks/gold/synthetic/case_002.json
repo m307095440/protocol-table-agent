@@ -1,0 +1,230 @@
+{
+  "tables": [
+    {
+      "caption": "Visit Schedule",
+      "data": {
+        "column_groups": [],
+        "columns": [
+          {
+            "colspan": 1,
+            "name": "Visit_0_0 | Result_1_0 | R0C0"
+          },
+          {
+            "colspan": 1,
+            "name": "Result_0_1 | Result_1_1 | R0C1"
+          },
+          {
+            "colspan": 1,
+            "name": "Group_0_2 | Window_1_2 | R0C2"
+          }
+        ],
+        "footnotes": [
+          {
+            "applies_to": [
+              "A1"
+            ],
+            "note_id": 1,
+            "symbol": "*",
+            "text": "A1 applies to subgroup"
+          }
+        ],
+        "notes_below_table": [],
+        "rows": [
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Visit_0_0"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Result_0_1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Group_0_2"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Result_1_0"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Result_1_1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "Window_1_2"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R0C0"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R0C1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R0C2"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R1C1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R1C2"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": ""
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R2C0"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R2C1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R2C2"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R3C0"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R3C1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R3C2"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R4C0"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R4C1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R4C2"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R5C0"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R5C1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R5C2"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R6C0"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R6C1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R6C2"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R7C0"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R7C1"
+              },
+              {
+                "colspan": 1,
+                "rowspan": 1,
+                "text": "R7C2"
+              }
+            ]
+          }
+        ]
+      },
+      "page_number": 1,
+      "table_id": 1,
+      "title": "Visit Schedule"
+    }
+  ]
+}
