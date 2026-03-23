@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "case_001",
+    "col_accuracy": 1.0,
+    "failures": [],
+    "footnote_accuracy": 1.0,
+    "row_accuracy": 1.0,
+    "schema_valid": true,
+    "table_precision": 1.0,
+    "table_recall": 1.0
+  },
+  {
+    "case_id": "case_002",
+    "col_accuracy": 1.0,
+    "failures": [],
+    "footnote_accuracy": 1.0,
+    "row_accuracy": 1.0,
+    "schema_valid": true,
+    "table_precision": 1.0,
+    "table_recall": 1.0
+  },
+  {
+    "case_id": "case_003",
+    "col_accuracy": 1.0,
+    "failures": [],
+    "footnote_accuracy": 1.0,
+    "row_accuracy": 1.0,
+    "schema_valid": true,
+    "table_precision": 1.0,
+    "table_recall": 1.0
+  },
+  {
+    "case_id": "case_004",
+    "col_accuracy": 1.0,
+    "failures": [],
+    "footnote_accuracy": 1.0,
+    "row_accuracy": 1.0,
+    "schema_valid": true,
+    "table_precision": 1.0,
+    "table_recall": 1.0
+  },
+  {
+    "case_id": "case_005",
+    "col_accuracy": 1.0,
+    "failures": [],
+    "footnote_accuracy": 1.0,
+    "row_accuracy": 1.0,
+    "schema_valid": true,
+    "table_precision": 1.0,
+    "table_recall": 1.0
+  },
+  {
+    "case_id": "case_006",
+    "col_accuracy": 1.0,
+    "failures": [],
+    "footnote_accuracy": 1.0,
+    "row_accuracy": 1.0,
+    "schema_valid": true,
+    "table_precision": 1.0,
+    "table_recall": 1.0
+  },
+  {
+    "case_id": "case_007",
+    "col_accuracy": 1.0,
+    "failures": [],
+    "footnote_accuracy": 1.0,
+    "row_accuracy": 1.0,
+    "schema_valid": true,
+    "table_precision": 1.0,
+    "table_recall": 1.0
+  },
+  {
+    "case_id": "case_008",
+    "col_accuracy": 1.0,
+    "failures": [],
+    "footnote_accuracy": 1.0,
+    "row_accuracy": 1.0,
+    "schema_valid": true,
+    "table_precision": 1.0,
+    "table_recall": 1.0
+  },
+  {
+    "case_id": "case_009",
+    "col_accuracy": 1.0,
+    "failures": [],
+    "footnote_accuracy": 1.0,
+    "row_accuracy": 1.0,
+    "schema_valid": true,
+    "table_precision": 1.0,
+    "table_recall": 1.0
+  },
+  {
+    "case_id": "case_010",
+    "col_accuracy": 1.0,
+    "failures": [],
+    "footnote_accuracy": 1.0,
+    "row_accuracy": 1.0,
+    "schema_valid": true,
+    "table_precision": 1.0,
+    "table_recall": 1.0
+  },
+  {
+    "case_id": "case_011",
+    "col_accuracy": 1.0,
+    "failures": [],
+    "footnote_accuracy": 1.0,
+    "row_accuracy": 1.0,
+    "schema_valid": true,
+    "table_precision": 1.0,
+    "table_recall": 1.0
+  },
+  {
+    "case_id": "case_012",
+    "col_accuracy": 1.0,
+    "failures": [],
+    "footnote_accuracy": 1.0,
+    "row_accuracy": 1.0,
+    "schema_valid": true,
+    "table_precision": 1.0,
+    "table_recall": 1.0
+  }
+]

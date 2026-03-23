@@ -1,87 +1,114 @@
 # Protocol Table Agent
 
-A Codex-driven repository for building a deterministic, self-improving protocol table extraction system.
+Deterministic, schema-first baseline for extracting protocol tables from PDFs/text-like protocol exports into JSON.
 
-## Purpose
-This repository is the starting point for Codex to build a generalized parser that extracts tables from protocol PDFs into a stable JSON schema.
+## What is implemented
 
-## Current state
-This repository initially contains:
-- task instructions for Codex
-- a target JSON schema draft
-- a benchmark plan
-- example inputs
+- Generalized parser (`src/parser/`) with inspectable heuristics for:
+  - table block detection
+  - multi-row header inference
+  - row normalization
+  - lightweight column-group inference
+  - footnote and note-below-table capture
+  - continuation merge across adjacent pages
+- JSON schema validation (`src/eval/validate_outputs.py`)
+- Regression benchmark harness (`src/eval/run_benchmark.py`)
+- Deterministic synthetic benchmark generator (`src/synth/generate_cases.py`)
+- Iterative self-improvement loop controller (`src/runner/self_improve.py`)
+- Regression tests for parser determinism and benchmark flow (`tests/`)
 
-It does not yet contain the parser implementation.
+## Determinism and reproducibility
 
-## Core goal
-Given a protocol PDF, extract all tables into structured JSON that conforms to `schema/protocol_table.schema.json`.
+- Pinned dependencies in `pyproject.toml`
+- Fixed synthetic RNG seed (`20260323`)
+- Stable sorting before output serialization
+- JSON emitted with `sort_keys=True`
+- Repeatable benchmark + artifact paths under `artifacts/`
 
-## Important constraints
-- The provided sample JSON is a structure reference, not guaranteed truth.
-- The parser must generalize across many protocol layouts.
-- The parser must avoid overfitting to one study or sponsor.
-- Runs should be reproducible and as deterministic as practical.
+## Installation
 
-## Initial repository setup
-Place the following files here before starting Codex:
-- `inputs/examples/ABC-01-001 Study Protocol-v2 1-Bookmark.pdf`
-- `inputs/examples/file_parser_example.json`
+```bash
+python -m pip install -e .[dev]
+```
 
-## Recommended Codex workflow
-1. Open this repository in Codex.
-2. Ask Codex to read:
-   - `AGENTS.md`
-   - `TASK_SPEC.md`
-   - `schema/protocol_table.schema.json`
-   - `benchmarks/BENCHMARK_PLAN.md`
-   - `prompts/CODEX_BOOTSTRAP_PROMPT.md`
-3. Instruct Codex to:
-   - scaffold the codebase
-   - implement a baseline parser
-   - add schema validation
-   - add tests
-   - add benchmark evaluation
-   - add synthetic data generation
-   - iterate until benchmark quality stabilizes
+## Parse a protocol PDF
 
-## Expected implementation areas
-Codex should eventually create:
-- `src/parser/`
-- `src/eval/`
-- `src/synth/`
-- `src/runner/`
-- `tests/`
+```bash
+python -m src.parser inputs/examples/ABC-01-001\ Study\ Protocol-v2\ 1-Bookmark.pdf artifacts/outputs/sample_pdf.json
+```
 
-## Minimum expected commands after implementation
-These are expected target commands that Codex should make work:
-- `python -m pytest tests -q`
-- `python -m src.eval.validate_outputs`
-- `python -m src.eval.run_benchmark`
-- `python -m src.runner.report_metrics`
+## Parse a text-like protocol export
 
-## Output artifacts
-Codex should save the following under `artifacts/`:
-- logs
-- benchmark summaries
-- failure classifications
-- output diffs
-- failed sample outputs
+```bash
+python -m src.parser benchmarks/cases/synthetic/case_001.txt artifacts/outputs/case_001.json
+```
 
-## Quality priorities
-Prioritize:
-1. schema validity
-2. table detection recall
-3. boundary correctness
-4. header structure
-5. rowspan / colspan
-6. footnote linkage
-7. continuation-table handling
-8. text fidelity
+## Full baseline flow (required checks)
 
-## What success looks like
-A good first version should:
-- pass schema validation
-- work on a meaningful subset of protocol tables
-- expose failure modes clearly
-- improve through repeated benchmark-driven iteration
+1) Generate deterministic synthetic benchmark:
+
+```bash
+python -m src.synth.generate_cases --num-cases 12
+```
+
+2) Run tests:
+
+```bash
+python -m pytest tests -q
+```
+
+3) Run benchmark and save metrics/failed cases:
+
+```bash
+python -m src.eval.run_benchmark
+```
+
+4) Validate outputs against schema:
+
+```bash
+python -m src.eval.validate_outputs
+```
+
+5) Report metrics:
+
+```bash
+python -m src.runner.report_metrics
+```
+
+6) Run iterative self-improvement controller:
+
+```bash
+python -m src.runner.self_improve --iterations 2
+```
+
+## Artifact layout
+
+- `artifacts/outputs/`: parser outputs used by validation/benchmark
+- `artifacts/metrics/benchmark_summary.json`: aggregate metrics
+- `artifacts/metrics/benchmark_results.json`: per-case scores and labels
+- `artifacts/failed_cases/`: structured failures with rerun command
+- `artifacts/self_improve/`: per-iteration loop state and failure taxonomy summary
+
+## Failure taxonomy used
+
+- missed_table
+- false_positive_table
+- wrong_table_boundary
+- wrong_header_hierarchy
+- wrong_row_split
+- wrong_col_split
+- wrong_rowspan
+- wrong_colspan
+- wrong_column_group
+- wrong_footnote_linkage
+- wrong_note_below_table_capture
+- wrong_continuation_merge
+- schema_violation
+- anchor_mismatch
+- text_normalization_error
+
+## Notes
+
+- The sample JSON in `inputs/examples/file_parser_example.json` is treated as a structure reference only.
+- Core parser logic is document-agnostic and does not use sample-specific hardcoded document IDs, titles, or page ranges.
+- Baseline currently favors structural stability and explicit failure artifacts over opaque post-processing.

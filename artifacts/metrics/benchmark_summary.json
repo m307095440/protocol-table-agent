@@ -1,0 +1,10 @@
+{
+  "cases": 12,
+  "col_accuracy": 1.0,
+  "failed_cases": [],
+  "footnote_accuracy": 1.0,
+  "row_accuracy": 1.0,
+  "schema_pass_rate": 1.0,
+  "table_detection_precision": 1.0,
+  "table_detection_recall": 1.0
+}
